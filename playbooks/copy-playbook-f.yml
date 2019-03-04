@@ -1,0 +1,6 @@
+- hosts: allhosts
+  tasks:
+  - name: Ansible copy file 
+    copy:
+      src: /etc/ansible/test
+      dest: /var/tmp
