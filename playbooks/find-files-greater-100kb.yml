@@ -1,0 +1,7 @@
+- hosts: allhosts
+  tasks:
+  - name: Ansible find files larger than 100 KB
+    find:
+      paths: /etc/ansible
+      size: "100k"
+    register: smallerfiles
