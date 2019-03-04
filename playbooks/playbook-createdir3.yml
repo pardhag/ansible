@@ -3,5 +3,5 @@
   tasks:
     - name: creating dir
       file:
-         path: /var/tmp
+         path: /var/tmp/testdir
          state: directory
