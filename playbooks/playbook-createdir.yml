@@ -1,0 +1,7 @@
+---
+- hosts: allhosts
+- name: Creates Directory
+  file:
+    path: /etc/ansible/test/subdir
+	state: directory
+	
