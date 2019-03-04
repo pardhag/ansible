@@ -1,0 +1,12 @@
+---
+hosts: allhosts
+tasks:
+- name: finding file with stat module
+stat:
+path:/var/tmp/abc
+register: stat_result
+- name: create the file, if it doesn't exist already
+file:
+path: /var/tmp/abc
+state: touch
+when: stat_result.stat.exists == False
