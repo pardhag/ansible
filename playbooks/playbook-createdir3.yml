@@ -1,0 +1,7 @@
+---
+- hosts: allhosts
+  tasks:
+    - name: creating dir
+      file:
+         path: /var/tmp
+         state: directory
