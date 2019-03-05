@@ -1,0 +1,8 @@
+- hosts: allhosts
+  tasks:
+    - import_tasks: 2.yml
+      vars:
+        v1: 1
+    - include_tasks: 2.yml
+      vars:
+        v1: 1

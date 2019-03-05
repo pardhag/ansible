@@ -1,0 +1,3 @@
+- import_tasks: 3.yml
+  vars:
+    v1: 2
