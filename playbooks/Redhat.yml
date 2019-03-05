@@ -1,0 +1,5 @@
+- name: Create a file in Ansible if OS is Linux
+- file:
+    path: /tmp/abc
+    state: touch
+    mode: "u=rwx,g=rwx,o=rwx"

@@ -1,0 +1,7 @@
+- hosts: allhosts
+  tasks:
+    - include: Windows.yml
+      when: ansible_os_family == "Windows"
+    
+    - include: Redhat.yml
+      when: ansible_os_family == "RedHat"

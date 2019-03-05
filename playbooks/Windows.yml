@@ -1,0 +1,4 @@
+- name: Create a file in Ansible if Windows
+- file:
+    path: D:\ansible\def
+    state: mkdir def
