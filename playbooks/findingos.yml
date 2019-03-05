@@ -1,0 +1,6 @@
+---
+- name: finding os create file
+  hosts: allhosts
+  connection: local
+  tasks:
+   - include: rhel.yml

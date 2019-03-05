@@ -1,0 +1,4 @@
+---
+- name: rhel | do something
+  shell: cat /etc/redhat-release
+  when: ansible_distribution == 'RedHat' and ansible_lsb.major_version|int >= 6
