@@ -1,4 +1,4 @@
 - name: Create a file in Ansible if Windows
-- file:
-    path: D:\ansible\def
-    state: mkdir def
+- win_command: whoami
+  register: whoami_out
+  - win_command: wbadmin -backupTarget:C:\def\ creates=C:\def\
